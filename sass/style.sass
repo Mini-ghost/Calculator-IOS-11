@@ -1,0 +1,84 @@
+$BtnKey: 58px
+
+*
+  font-family: 'Roboto', sans-serif
+  box-sizing: border-box
+
+::selection
+  background-color: #ffa000
+
+body
+  background-color: #eee
+
+#IphoneScreen
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%,-50%)
+  width: 9px*30
+  height: 16px*30
+  background-color: #151515
+
+#Calculator
+  position: absolute
+  bottom: 10px
+  width: 100%
+  overflow: hidden
+
+.ScreenTotal
+  display: flex
+  justify-content: flex-end
+  align-items: flex-end
+  width: 100%
+  height: $BtnKey*1.5
+  color: #fff
+  font-size: 3.15rem
+  padding: 10px
+  
+ul
+  display: flex
+  justify-content: center
+  align-items: center
+  margin: 0
+  padding: 0
+  li
+    list-style: none
+    font-size: 1.7rem
+    user-select: none
+    margin: 4px
+    cursor: pointer
+    
+.Number-btn , .misc-btn , .Operator-btn , .equal
+  display: flex
+  justify-content: center
+  align-items: center
+  width: $BtnKey
+  height: $BtnKey
+  border-radius: $BtnKey
+  background-color: #555
+  color: #fff
+  transition: 0.1s
+  &:hover
+    background-color: #888
+  
+.misc-btn 
+  background-color: #aaa
+  color: #222
+  &:hover
+    background-color: #ccc
+  
+.Operator-btn , .equal
+  background-color: darkorange
+  &:hover
+    background-color: #eac483
+  
+.zero
+  display: block
+  padding-top: 13px
+  padding-left: 24px
+  width: $BtnKey*2 + 8px
+  
+.click
+  background-color: #fff
+  color: darkorange
+  font-weight: 900
